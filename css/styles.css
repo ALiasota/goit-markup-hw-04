@@ -170,20 +170,19 @@ img {
   margin-left: 50px;
 }
 
-.head-svg{
-  
-  stroke: inherit;
+.head-svg{    
   margin-right: 10px;
+  --color5:inherit;
 }
 
 .mail {
-  width: 19px;
-  height: 14px;
+  width: 20px;
+  height: 15px;
 }
 
 .tel{
-  width: 12px;
-  height: 19px;
+  width: 16px;
+  height: 25px;
 }
 
 
