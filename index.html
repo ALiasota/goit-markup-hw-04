@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <title>Web Studio</title>
 </head>
-<body>
+<body>    
     <!--Шапка сайта-->
     <header class="page-header">
         <div class="head container">
@@ -25,8 +25,17 @@
                 </ul>  
             </nav>
             <div class="contacts-head">
-                <a class="link contsct-header" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                <a class="link contsct-header" href="tel:+380961111111">+38 096 111 11 11</a>
+                <a class="link contact-header" href="mailto:info@devstudio.com">
+                    <svg class="head-svg mail">
+                        <use href="./images/icons.svg#icon-mail-to-svg"></use>
+                    </svg>
+                    info@devstudio.com
+                </a>
+                <a class="link contact-header" href="tel:+380961111111">                    
+                    <svg class="head-svg tel">
+                        <use href="./images/icons.svg#icon-phone-to-svg"></use>
+                    </svg>
+                    +38 096 111 11 11</a>
             </div>
         </div>
     </header>
@@ -48,24 +57,44 @@
                 <h2 class="transparent">Качества</h2>
                 <ul class="list qualities">
                     <li class="quality-item">
+                        <div class="quality-contain-svg">
+                            <svg class="quality-svg">
+                                <use href="./images/icons.svg#icon-vnimanie-svg"></use>
+                            </svg>
+                        </div>
                         <h3 class="quality-title">Внимание к деталям</h3>
                         <p class="quality-text">
                             Идейные соображения, а также начало повседневной работы по формированию позиции.
                         </p>
                     </li>
                     <li class="quality-item">
+                        <div class="quality-contain-svg">
+                            <svg class="quality-svg">
+                                <use href="./images/icons.svg#icon-punktualn-svg"></use>
+                            </svg>
+                        </div>
                         <h3 class="quality-title">Пунктуальность</h3>
                         <p class="quality-text">
                             Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
                         </p>
                     </li>
                     <li class="quality-item">
+                        <div class="quality-contain-svg">
+                            <svg class="quality-svg">
+                                <use href="./images/icons.svg#icon-planirov-svg"></use>
+                            </svg>
+                        </div>
                         <h3 class="quality-title">Планирование</h3>
                         <p class="quality-text">
                             Равным образом консультация с широким активом в значительной степени обуславливает.
                         </p>
                     </li>
                     <li class="quality-item">
+                        <div class="quality-contain-svg">
+                            <svg class="quality-svg">
+                                <use href="./images/icons.svg#icon-tehnolog-svg"></use>
+                            </svg>
+                        </div>
                         <h3 class="quality-title">Современные технологии</h3>
                         <p class="quality-text">
                             Значимость этих проблем настолько очевидна, что реализация плановых заданий.

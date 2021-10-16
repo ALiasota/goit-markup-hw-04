@@ -25,6 +25,11 @@ body {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 h1,
 h2,
 h3,
@@ -133,6 +138,7 @@ img {
 .list .adress:hover,
 .list .adress:focus {
   color: var(--accent-color);
+  stroke: var(--accent-color);
 }
 
 .site-nav-item:not(:first-child) {
@@ -143,9 +149,13 @@ img {
 
 .contacts-head {
   margin-left: auto;
+  display: flex;
 }
 
-.contsct-header {
+
+.contact-header {
+  display: flex;
+  align-items: center;  
   color: inherit;
   font-weight: 500;
   font-size: 14px;
@@ -154,9 +164,27 @@ img {
   text-decoration: none;
 }
 
-.contsct-header:not(:first-child) {
+.contact-header:not(:first-child) {
   margin-left: 50px;
 }
+
+.head-svg{
+  
+  stroke: inherit;
+  margin-right: 10px;
+}
+
+.mail {
+  width: 16px;
+  height: 12px;
+}
+
+.tel{
+  width: 10px;
+  height: 16px;
+}
+
+
 
 /*Hero*/
 
@@ -215,6 +243,7 @@ img {
 .hero-button:focus {
   background-color: #188CE8;  
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /*quality*/
@@ -233,6 +262,18 @@ img {
 
 .quality-item:not(:first-child) {
   margin-left: 30px;
+}
+
+.quality-contain-svg {
+  background: #F5F4FA;
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+.quality-svg{
+  width: 70px;
+  height: 70px;
 }
 
 .quality-title {
@@ -367,6 +408,10 @@ img {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   cursor: pointer;
+  box-shadow: 
+  0px 3px 1px rgba(0, 0, 0, 0.1), 
+  0px 1px 2px rgba(0, 0, 0, 0.08), 
+  0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .projects {
@@ -387,6 +432,15 @@ img {
 
 .project-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  display: block;  
+  box-shadow: 
+  0px 1px 1px rgba(0, 0, 0, 0.12), 
+  0px 4px 4px rgba(0, 0, 0, 0.06), 
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-discr {
