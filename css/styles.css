@@ -312,8 +312,12 @@ img {
 }
 
 .member-item {
+  display: block;
   flex-basis: calc(100% / 4 - 30px);
   background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .member-item:not(:first-child) {
@@ -351,13 +355,19 @@ img {
 }
 
 .soc-set {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+
   --color3: var(--primary-white-color);
   --color1: var(--primary-text-color);
 }
 
 .soc-set:focus,
 .soc-set:hover {
-  --color3: var(--accent-color);
+  --color3: #2196f3;
   --color1: var(--primary-white-color);
 }
 
@@ -400,12 +410,13 @@ img {
 
 .client-link:focus,
 .client-link:hover {
-  --color2: var(--accent-color);
-  --color1: var(--accent-color);
+  --color2: #2196f3;
+  --color1: #2196f3;
 }
 
 .client-svg {
   width: 106px;
+  height: 92px;
   --color2: inherit;
   --color1: inherit;
 }
@@ -420,6 +431,7 @@ img {
 
 .contein-footer {
   display: flex;
+  align-items: baseline;
 }
 
 .contein-footer .list {
@@ -473,7 +485,7 @@ img {
 
 .contein-footer .soc-set:focus,
 .contein-footer .soc-set:hover {
-  --color3: var(--accent-color);
+  --color3: #2196f3;
 }
 
 /*Portfolio*/
