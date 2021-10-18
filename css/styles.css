@@ -187,10 +187,12 @@ img {
 
 .hero-bg {
   background-color: #2f303a;
-  width: 1200px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
   height: 600px;
   background-image: linear-gradient(
       to right,
@@ -203,12 +205,10 @@ img {
   background-size: cover;
 }
 
-.hero-contein {
-  padding: 200px 252px;
-  text-align: center;
-}
-
 .hero-title {
+  width: 696px;
+  margin-left: 452px;
+  margin-right: 452px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -261,10 +261,13 @@ img {
 }
 
 .quality-contain-svg {
+  margin-bottom: 30px;
   background: #f5f4fa;
   border-radius: 4px;
-  padding: 25px 100px;
-  margin-bottom: 30px;
+  display: flex;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
 }
 
 .quality-svg {
@@ -310,6 +313,7 @@ img {
 
 .member-item {
   flex-basis: calc(100% / 4 - 30px);
+  background-color: var(--primary-white-color);
 }
 
 .member-item:not(:first-child) {
@@ -346,17 +350,22 @@ img {
   margin-right: 10px;
 }
 
-.soc-set-svg {
-  width: 44px;
-  height: 44px;
-  --color3: #f5f4fa;
+.soc-set {
+  --color3: var(--primary-white-color);
   --color1: var(--primary-text-color);
 }
 
-.soc-set-svg:focus,
-.soc-set-svg:hover {
+.soc-set:focus,
+.soc-set:hover {
   --color3: var(--accent-color);
   --color1: var(--primary-white-color);
+}
+
+.soc-set-svg {
+  width: 44px;
+  height: 44px;
+  --color3: inherit;
+  --color1: inherit;
 }
 
 /* Clients */
@@ -385,18 +394,20 @@ img {
   height: 92px;
   justify-content: center;
   align-items: center;
-}
-
-.client-svg {
-  width: 106px;
   --color2: #afb1b8;
   --color1: #afb1b8;
 }
 
-.client-svg:focus,
-.client-svg:hover {
+.client-link:focus,
+.client-link:hover {
   --color2: var(--accent-color);
   --color1: var(--accent-color);
+}
+
+.client-svg {
+  width: 106px;
+  --color2: inherit;
+  --color1: inherit;
 }
 
 /*footer*/
@@ -455,13 +466,13 @@ img {
   padding: 0;
 }
 
-.contein-footer .soc-set-svg {
+.contein-footer .soc-set {
   --color3: rgba(255, 255, 255, 0.1);
   --color1: var(--primary-white-color);
 }
 
-.contein-footer .soc-set-svg :focus,
-.contein-footer .soc-set-svg:hover {
+.contein-footer .soc-set:focus,
+.contein-footer .soc-set:hover {
   --color3: var(--accent-color);
 }
 
