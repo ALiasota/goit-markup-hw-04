@@ -362,12 +362,12 @@ img {
   border: none;
 
   --color3: var(--primary-white-color);
-  --color1: var(--primary-text-color);
+  --color1: #afb1b8;
 }
 
 .soc-set:focus,
 .soc-set:hover {
-  --color3: #2196f3;
+  --color3: var(--accent-color);
   --color1: var(--primary-white-color);
 }
 
@@ -410,8 +410,8 @@ img {
 
 .client-link:focus,
 .client-link:hover {
-  --color2: #2196f3;
-  --color1: #2196f3;
+  --color2: var(--accent-color);
+  --color1: var(--accent-color);
 }
 
 .client-svg {
@@ -485,7 +485,7 @@ img {
 
 .contein-footer .soc-set:focus,
 .contein-footer .soc-set:hover {
-  --color3: #2196f3;
+  --color3: var(--accent-color);
 }
 
 /*Portfolio*/
